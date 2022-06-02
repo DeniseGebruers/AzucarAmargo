@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@300&family=Koulen&family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+}
+
+.navegacion {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.menu {
+    text-align: end;
+    font-size: 1.1rem;
+    font-family: 'Koulen', cursive;
+}
+
+.link {
+    display: inline;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.logoNav {
+    width: 120px; 
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: grey
+}
+
+img {
+    width: 60px;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;    
+    text-align: center;
+    color: #E25C5A;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: grey;
+}
+
+.intro {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/inicio4.jpg);
+    background-size: 50%;
+    background-repeat:no-repeat;
+    background-color: #E25C5A;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.heroTitle {
+    font-size: 8rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;    
+    justify-content: end;
+    margin-right: 3%;
+    margin-top: 3%;
+    color: white;
+}
+
+.heroSubtitle {
+    font-size: 3rem;
+    margin-right: 2%;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+}
+
+.heroIntro {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+    margin-right: 7%;
+    margin-top: 2%;
+}
+
+.linea {
+    background-color: gray;
+    height: 3px;
+    margin: 1%;
+}
+
+footer {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 0%;
+}
+.redes {
+    height: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.mapa {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    border-radius: 2%;
+    left: 2%;
+}
+
+.menuFoo {
+    font-size: 1.2rem;
+    font-family: 'Koulen', cursive;
+    text-align: end;
+    margin-right: 3%;
+}
+
+.copyright {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-style: oblique;
+}
+
+/* PESTAÑA PRODUCTOS */
+
+.mates {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+}
+
+.tipoMate {
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    color: GRAY;
+    font-weight: 400;
+    text-align: start;
+    margin-left: 2%;
+    text-decoration: underline;
+}
+
+.fotoMate {
+    width: 250px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    text-align: start;
+    margin-left: 2%;
+    color: gray;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-left: 2%;
+}
+
+.descripcion {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* PESTAÑA P FRECUENTES */
+
+.respuesta {
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* PESTAÑA NOSOTROS */
+
+.nosotros {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    grid-column-gap: 40px;
+    justify-content: space-around;
+}
+
+.fotoNosotros  {
+    margin-left: 50px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+.textNosotros {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* PESTAÑA CONTACTO */
+
+.heroContacto {
+    background-image: url(/img/prueba.png);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleContacto {
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    margin-top: 5%;
+    color: #E25C5A;
+}
+
+.subtitleContacto {
+    font-size: 2.5rem;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 300;
+    margin-top: 2%;
+    color: white;
+}
+.form {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+}
+
+button {
+    padding: 15px;
+    margin: 3%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: white;
+    background-color: #E25C5A;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+/*Desde 1024px*/
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        background-size: 50%;
+    }
+    .heroTitle {
+        text-shadow: 2px 2px black;
+    }
+    .heroSubtitle {
+        text-shadow: 1px 1px black;
+    }
+    .heroIntro { 
+        color:#E25C5A;
+        background-color: white;
+    }
+}
+
+
+/*Hasta 1023px*/
+
+@media screen and (max-width: 1023px) {
+    .hero {
+        background-image: url(/img/inicio4.jpg);
+        height: 100%;
+        justify-content: center;
+        align-items: end;
+    }
+    .heroTitle {
+        margin-right: 4%;
+        margin-top: 0;
+        font-size: 4.5rem;
+    }
+    .heroSubtitle {
+        margin-right: 6%;
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+    .heroIntro { 
+        margin-right: 8%;
+        margin-top: 0;
+        font-size: 0.8rem;
+        text-align: center;
+        color: #E25C5A;
+        background-color: white;
+    }
+    .mapa {
+        width: 250px;
+        height: 150px;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    img {
+        width: 40px;
+    }
+    .menuFoo {
+        font-size: 1.1rem;
+        margin-right: 3%;
+    }
+    .copyright {
+        font-size: 0.5rem;
+    }
+
+/*PESTAÑA PRODUCTOS MEDIA QUERIE 1023*/
+
+    .title {
+        font-size: 3rem;
+    }
+    .mates {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+/*PESTAÑA NOSOTROS MEDIA QUERIE 1023*/
+
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+    .textNosotros {
+        font-size: 1rem;
+        margin-right: 2px;
+        text-align: center;
+    }
+    .fotoNosotros {
+        width: 250px;
+        margin-left: 20px;
+    }
+}
+
+
+/*Hasta 768px*/
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+    }
+    .heroTitle {
+        margin-right: 0;
+        margin-top: 0;
+        font-size: 4rem;
+        text-shadow: 2px 2px black;
+    }
+    .heroSubtitle {
+        margin-right: 0;
+        margin-top: 0;
+        font-size: 1.5rem;
+        text-shadow: 1px 1px black;
+    }
+    .heroIntro { 
+        margin-right: 0;
+        margin-top: 0;
+        font-size: 0.8rem;
+        text-align: center;
+        color: white;
+        background-color: #E25C5A;
+    }
+    .navegacion {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .menu {
+        font-size: 0.5rem;
+    }
+    .logoNav {
+        width: 60px; 
+    }
+    .mapa {
+        width: 150px;
+        height: 100px;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    img {
+        width: 25px;
+    }
+    .menuFoo {
+        font-size: 0.7rem;
+        margin-right: 3%;
+    }
+    .copyright {
+        font-size: 0.5rem;
+    }
+
+/*PESTAÑA PRODUCTOS MEDIA QUERIE 768*/
+
+    .intro {
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .descripcion {
+        font-size: 0.8rem;
+    }
+    .tipoMate {
+        font-size: 1.3rem;
+    }
+    .mates {
+        grid-template-columns: 1fr;
+    }
+    .fotoMate {
+        width: 200px;
+    }
+    
+/*PESTAÑA PREGUNTAS MEDIA QUERIE 768*/
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    .respuesta {
+        font-size: 0.8rem;
+    }
+
+/*PESTAÑA NOSOTROS MEDIA QUERIE 768*/
+
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+    .textNosotros {
+        font-size: 0.8rem;
+        margin-right: 2px;
+        text-align: center;
+    }
+    .fotoNosotros {
+        width: 200px;
+        margin-left: 20px;
+    }
+
+/*PESTAÑA CONTACTO MEDIA QUERIE 768*/
+
+    .heroContacto {
+        height: 90%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .titleContacto {
+        font-size: 1.5rem;
+    }
+    .subtitleContacto {
+        font-size: 1rem;
+    }    
+    .form {
+        width: 50px;
+        font-size: 0.5rem;
+        margin-top: 0%;
+    }
+    button {
+        padding: 10px;
+        margin: 1%;
+        font-size: 0.5rem;
+    }
+}
+
+/*Hasta 420*/
+
+@media screen and (max-width: 420px) {
+    .heroTitle {
+        font-size: 2rem;
+    }
+    .heroSubtitle {
+        font-size: 1rem;
+    }
+    .heroIntro {
+        font-size: 0.5rem;
+    }
+    .navegacion {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .menu {
+        font-size: 0.4rem;
+    }
+    .logoNav {
+        width: 30px; 
+    }
+    .mapa {
+        width: 80px;
+        height: 80px;
+    }
+    .link {
+        margin: 0 5px;
+    }
+    .title {
+        font-size: 1rem;
+    }
+    .menuFoo {
+        font-size: 0.5rem;
+        margin-right: 3%;
+    }
+
+/*PESTAÑA PRODUCTOS MEDIA QUERIE 420*/
+
+    .intro {
+        font-size: 0.5rem;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+    .descripcion {
+        font-size: 0.5rem;
+    }
+    .tipoMate {
+        font-size: 1rem;
+    }
+    .mates {
+        grid-template-columns: 1fr;
+    }
+    .fotoMate {
+        width: 200px;
+    }
+        
+/*PESTAÑA PREGUNTAS MEDIA QUERIE 420*/
+
+    .subtitle {
+        font-size: 1rem;
+    }
+    .respuesta {
+        font-size: 0.8rem;
+    }
+    h3 {
+        font-size: 0.8rem;
+    }
+}
