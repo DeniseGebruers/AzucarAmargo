@@ -19,12 +19,43 @@ body {
     text-align: end;
     font-size: 1.1rem;
     font-family: 'Koulen', cursive;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu a {
+    display: block;
+    position: relative;
 }
 
 .link {
-    display: inline;
+    display: inline-block;
     margin: 0 10px;
     padding: 5px;
+}
+
+.links {
+    text-decoration: none;
+    color: gray;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu a:hover::before {
+    transform: scaleX(1);
 }
 
 .logoNav {
@@ -32,15 +63,6 @@ body {
     position: absolute;
     top: 10px;
     left: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: grey
-}
-
-img {
-    width: 60px;
 }
 
 .title {
@@ -119,10 +141,11 @@ footer {
     margin-top: 0%;
 }
 .redes {
-    height: 0px;
     display: flex;
-    align-items: center;
-    flex-direction: column;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center; 
 }
 
 .mapa {
@@ -136,8 +159,35 @@ footer {
 .menuFoo {
     font-size: 1.2rem;
     font-family: 'Koulen', cursive;
-    text-align: end;
-    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    height: 0px;
+    margin-right: 2%;
+    list-style: none;
+}
+
+.menuFoo a {
+    position: relative;
+}
+
+.menuFoo a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menuFoo a:hover::before {
+    transform: scaleX(1);
 }
 
 .copyright {
@@ -227,10 +277,8 @@ h4 {
 /* PESTAÑA CONTACTO */
 
 .heroContacto {
-    background-image: url(/img/prueba.png);
-    background-size: cover;
-    width: 100%;
-    height: auto;
+    background-color: #d9a6bd;
+    background-image: linear-gradient(0deg, #d9a6bd 0%, #b8bcbc 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,7 +288,7 @@ h4 {
     font-size: 3rem;
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
-    margin-top: 5%;
+    margin-top: 1.5%;
     color: #E25C5A;
 }
 
@@ -249,23 +297,23 @@ h4 {
     font-family: 'Dongle', sans-serif;
     font-weight: 300;
     margin-top: 2%;
-    color: white;
+    color: gray;
 }
 .form {
     width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1%;
+    margin-top: 0%;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    color: white;
+    color: gray;
     font-size: 1rem;
 }
 
-button {
+.btn {
     padding: 15px;
-    margin: 3%;
+    margin: 10%;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2.5px;
@@ -275,6 +323,19 @@ button {
     border: none;
     border-radius: 45px;
     cursor: pointer;
+    -webkit-animation: scale-up-center 0.4s none;
+    animation: scale-up-center 0.4s none;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
 }
 
 /* MEDIA QUERIES */
@@ -376,21 +437,23 @@ button {
 /*Hasta 768px*/
 
 @media screen and (max-width: 768px) {
+    main {
+        height: 450px;
+    }
     .hero {
         background-size: cover;
         justify-content: center;
         align-items: center;
     }
     .heroTitle {
-        margin-right: 0;
-        margin-top: 0;
-        font-size: 4rem;
+        font-size: 3.8rem;
         text-shadow: 2px 2px black;
+
     }
     .heroSubtitle {
         margin-right: 0;
         margin-top: 0;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-shadow: 1px 1px black;
     }
     .heroIntro { 
@@ -505,24 +568,18 @@ button {
 /*Hasta 420*/
 
 @media screen and (max-width: 420px) {
-    .heroTitle {
-        font-size: 2rem;
+    main {
+        height: 450px;
     }
-    .heroSubtitle {
-        font-size: 1rem;
-    }
-    .heroIntro {
-        font-size: 0.5rem;
+    .hero {
+        background-image: url(/img/Inicioquerie.jpg);
+        background-size: cover
+        justify-content: center;
+        align-items: center;
     }
     .navegacion {
         padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .menu {
-        font-size: 0.4rem;
-    }
-    .logoNav {
-        width: 30px; 
+        padding-bottom: 30px;
     }
     .mapa {
         width: 80px;
