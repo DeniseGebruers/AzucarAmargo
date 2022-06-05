@@ -323,17 +323,14 @@ h4 {
     border: none;
     border-radius: 45px;
     cursor: pointer;
-    -webkit-animation: scale-up-center 0.4s none;
     animation: scale-up-center 0.4s none;
 }
 
-@-webkit-keyframes scale-up-center {
+@keyframes scale-up-center {
     0% {
-    -webkit-transform: scale(0.5);
     transform: scale(0.5);
     }
     100% {
-    -webkit-transform: scale(1);
     transform: scale(1);
     }
 }
@@ -574,8 +571,6 @@ h4 {
     .hero {
         background-image: url(/img/Inicioquerie.jpg);
         background-size: cover
-        justify-content: center;
-        align-items: center;
     }
     .navegacion {
         padding-top: 20px;
