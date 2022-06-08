@@ -569,8 +569,8 @@ h4 {
         height: 450px;
     }
     .hero {
-        background-image: url(../img/Inicioquerie.jpg);
-        background-size: cover
+    background-image: url(../img/Inicioquerie.jpg);
+    background-size: cover;
     }
     .navegacion {
         padding-top: 20px;
