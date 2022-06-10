@@ -371,12 +371,6 @@ h4 {
 /*Hasta 1023px*/
 
 @media screen and (max-width: 1023px) {
-    .hero {
-        background-image: url(../img/inicio4.jpg);
-        height: 100%;
-        justify-content: center;
-        align-items: end;
-    }
     .heroTitle {
         margin-right: 4%;
         margin-top: 0;
@@ -396,8 +390,8 @@ h4 {
         background-color: white;
     }
     .mapa {
-        width: 250px;
-        height: 150px;
+        width: 200px;
+        height: 100px;
     }
     .title {
         font-size: 2rem;
@@ -446,18 +440,15 @@ h4 {
 /*Hasta 768px*/
 
 @media screen and (max-width: 768px) {
-    main {
-        height: 450px;
+    .redes a{
+        font-size: 30px;
     }
-    .hero {
-        background-size: cover;
-        justify-content: center;
-        align-items: center;
+    .links {
+        font-size: 0.8rem;
     }
     .heroTitle {
         font-size: 3.8rem;
         text-shadow: 2px 2px black;
-
     }
     .heroSubtitle {
         margin-right: 0;
@@ -484,8 +475,8 @@ h4 {
         width: 60px; 
     }
     .mapa {
-        width: 150px;
-        height: 100px;
+        width: 140px;
+        height: 120px;
     }
     .title {
         font-size: 1.5rem;
@@ -551,56 +542,50 @@ h4 {
 
 /*PESTAÑA CONTACTO MEDIA QUERIE 768*/
 
-    .heroContacto {
-        height: 90%;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
     .titleContacto {
         font-size: 1.5rem;
     }
     .subtitleContacto {
         font-size: 1rem;
-    }    
-    .form {
-        width: 50px;
-        font-size: 0.5rem;
-        margin-top: 0%;
     }
-    button {
-        padding: 10px;
-        margin: 1%;
-        font-size: 0.5rem;
+    .mapaContacto {
+        width: 40%;
+        align-items: center;
     }
+    .menuContacto{
+        
+    }
+    .btn {
+        margin-bottom: 10%;
+    }
+    
 }
 
 /*Hasta 420*/
 
 @media screen and (max-width: 420px) {
-    main {
-        height: 450px;
-    }
-    .hero {
-    background-image: url(../img/Inicioquerie.jpg);
-    background-size: cover;
-    }
     .navegacion {
         padding-top: 20px;
         padding-bottom: 30px;
     }
-    .mapa {
-        width: 80px;
-        height: 80px;
+    .links {
+        font-size: 0.5rem;
     }
     .link {
         margin: 0 5px;
     }
     .title {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .menuFoo {
         font-size: 0.5rem;
         margin-right: 3%;
+    }
+    .mapa{
+        width: 90px;
+    }
+    .redes a{
+        font-size: 25px;
     }
 
 /*PESTAÑA PRODUCTOS MEDIA QUERIE 420*/
@@ -614,16 +599,7 @@ h4 {
     .descripcion {
         font-size: 0.5rem;
     }
-    .tipoMate {
-        font-size: 1rem;
-    }
-    .mates {
-        grid-template-columns: 1fr;
-    }
-    .fotoMate {
-        width: 200px;
-    }
-        
+    
 /*PESTAÑA PREGUNTAS MEDIA QUERIE 420*/
 
     .subtitle {
@@ -633,6 +609,26 @@ h4 {
         font-size: 0.8rem;
     }
     h3 {
+        font-size: 0.8rem;
+    }
+
+    /*PESTAÑA CONTACTO MEDIA QUERIE 420*/
+
+    .mapaContacto {
+        width: 10%;
+    }
+    .btn{
+        padding: 10px;
+        margin-left: 37%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+        font-size: 0.8rem;
+    }
+    .iconos{
+        font-size: 45px;
+    }
+
+    .form{
         font-size: 0.8rem;
     }
 }
