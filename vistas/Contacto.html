@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,61 +22,64 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <section class="heroContacto">
             <h2 class="titleContacto">CONTACTO</h2>
             <p class="subtitleContacto">¡Dejame tus datos y me contactaré con vos a la brevedad!</p>
-            <br>
-            <form class="form" action="" method="get" enctype="text/plain">
-                <div>
-                    <label for="userName">Nombre</label>
-                    <input type="text" id="userName" name="userName">
-                </div>
-                <br>
-                <div>
-                    <label for="userSurname">Apellido</label>
-                    <input type="text" id="userSurname" name="userSurname">
-                </div>
-                <br>
-                <div>
-                    <label for="userMail">E-Mail</label>
-                    <input type="email" id="userMail" name="userMail">
-                </div>
-                <br>
-                <div>
-                    <label for="userMsj">Mensaje</label>
-                    <textarea name="userMsj" id="userMsj" cols="30" rows="10"></textarea>
-                </div>
-                <br>
-                <button class="btn" type="submit">Enviar</button>
-            </form>
         </section>
+        <div class="row">
+            <div class="col-md-6">
+                <form class="form" action="" method="get" enctype="text/plain">
+                    <section>
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="userName" name="userName" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="userSurname" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="userSurname" name="userSurname" placeholder="Apellido">
+                        </div>
+                        <div class="mb-3">
+                            <label for="userMail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="userMail" name="userMail" placeholder="Nombre@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="userMsj" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="userMsj" rows="4" placeholder="Escriba aquí su mensaje"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn" type="submit">Enviar</button>
+                        </div>
+                    </section>
+                </form>
+            </div>
+            <div class="col-md-6 iconos d-flex flex-column align-items-center">
+                <h2 class="title">¡SEGUINOS!</h2>
+                <a href="https://www.instagram.com/azucaramargo.mates/"><i class="fa-brands fa-instagram iconos"></i></a>
+                <a href="https://www.facebook.com/azucaramargo.mates"><i class="fa-brands fa-facebook iconos"></i></a>
+            </div>
+        </div>
         <hr class="linea">
-        <br><br>
     </main>
-    <footer>
-        <div class="redes">
-            <h2 class="title">¡SEGUINOS!</h2>
-            <a href="https://www.instagram.com/azucaramargo.mates">
-                <img src="../img/Instagram.png" alt="Instagram" width="60px">
-            </a>
-            <a href="https://www.facebook.com/azucaramargo.mates">
-                <img src="../img/Facebook.png" alt="Facebook" width="60px">
-            </a>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.888779237879!2d-58.45038467306615!3d-34.80873991773811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3c42091305f%3A0x5b9e90a16a1d988a!2sBoulevard%20Buenos%20Aires%201610!5e0!3m2!1ses!2sar!4v1652143018766!5m2!1ses!2sar" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <iframe class="mapaContacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.888779237879!2d-58.45038467306615!3d-34.80873991773811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3c42091305f%3A0x5b9e90a16a1d988a!2sBoulevard%20Buenos%20Aires%201610!5e0!3m2!1ses!2sar!4v1652143018766!5m2!1ses!2sar" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-6">
+                <ul class="menuContacto">
+                    <li><a class="links" href="../index.html">Inicio</a></li>
+                    <li><a class="links" href="Productos.html">Productos</a></li>
+                    <li><a class="links" href="Nosotros.html">Nosotros</a></li>
+                    <li><a class="links" href="Preguntas.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <ul class="menuFoo">
-                <li><a class="links" href="../index.html">Inicio</a></li>
-                <li><a class="links" href="Productos.html">Productos</a></li>
-                <li><a class="links" href="Nosotros.html">Nosotros</a></li>
-                <li><a class="links" href="Preguntas.html">Preguntas Frecuentes</a></li>
-            </ul>
-        </div>
-        <br><br><br>
-        <div class="copyright">
+        <br>
+        <div class="copyrightContacto">
             <strong>© 2022 Azúcar Amargo Mates, todos los derechos reservados. </strong>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous "></script>
 </body>
 </html>
