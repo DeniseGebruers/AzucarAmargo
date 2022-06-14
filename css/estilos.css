@@ -94,6 +94,16 @@ body {
     text-align: center;
 }
 
+.introInicio {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1.5rem;
+}
+
+.introInicio a{
+    text-decoration: none;
+    color: black;
+}
 .linea {
     background-color: gray;
     height: 3px;
@@ -272,6 +282,7 @@ h4 {
 .textNosotros {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .wave{
@@ -300,6 +311,7 @@ h4 {
     font-weight: 300;
     margin-top: 2%;
     color: gray;
+    text-align: center;
 }
 
 .copyrightContacto{
@@ -353,7 +365,9 @@ h4 {
     font-weight: bold;
     color: gray;
 }
-
+.redesContacto{
+    margin-top: 10%;
+}
 .redesContacto a i:hover{
     color: #E25C5A;
     transform: scale(1.1);
@@ -405,282 +419,90 @@ h4 {
 
 /* MEDIA QUERIES */
 
-/*Desde 1024px*/
-
-@media screen and (min-width: 1024px) {
-    .hero {
-        background-size: 50%;
-    }
-    .heroTitle {
-        text-shadow: 2px 2px black;
-    }
-    .heroSubtitle {
-        text-shadow: 1px 1px black;
-    }
-    .heroIntro { 
-        color:#E25C5A;
-        background-color: white;
-    }
-}
-
-
-/*Hasta 1023px*/
-
-@media screen and (max-width: 1023px) {
-    .heroTitle {
-        margin-right: 4%;
-        margin-top: 0;
-        font-size: 4.5rem;
-    }
-    .heroSubtitle {
-        margin-right: 6%;
-        margin-top: 0;
-        font-size: 1.5rem;
-    }
-    .heroIntro { 
-        margin-right: 8%;
-        margin-top: 0;
+/*Desde 1025px*/
+@media screen and (min-width: 1025px){
+    .menuFoo a {
         font-size: 0.8rem;
-        text-align: center;
-        color: #E25C5A;
-        background-color: white;
-    }
-    .mapa {
-        width: 200px;
-        height: 100px;
-    }
-    .title {
-        font-size: 2rem;
-    }
-    img {
-        width: 40px;
     }
     .menuFoo {
-        font-size: 1.1rem;
-        margin-right: 3%;
+        width: 180%;
     }
-    .copyright {
-        font-size: 0.5rem;
-    }
-
-/*PESTAÑA PRODUCTOS MEDIA QUERIE 1023*/
-
     .title {
+        font-size: 3.5rem;
+    }
+    .subtitle {
         font-size: 3rem;
     }
-    .mates {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-/*PESTAÑA NOSOTROS MEDIA QUERIE 1023*/
-
-    .nosotros {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        justify-items: center;
-    }
-    .textNosotros {
-        font-size: 1rem;
-        margin-right: 2px;
+    .introInicio {
+        font-size: 1.5rem;
         text-align: center;
-    }
-    .fotoNosotros {
-        width: 250px;
-        margin-left: 20px;
     }
 }
 
+/*Hasta 1024px*/
+@media screen and (max-width: 1024px) {
+    .menuFoo a {
+        font-size: 0.7rem;
+    }
+    .menuFoo {
+        width: 180%;
+    }
+    .introInicio {
+        text-align: center;
+    }
+}
 
 /*Hasta 768px*/
-
 @media screen and (max-width: 768px) {
-    .redes a{
-        font-size: 30px;
-    }
-    .links {
-        font-size: 0.8rem;
-    }
-    .heroTitle {
-        font-size: 3.8rem;
-        text-shadow: 2px 2px black;
-    }
-    .heroSubtitle {
-        margin-right: 0;
-        margin-top: 0;
-        font-size: 1.4rem;
-        text-shadow: 1px 1px black;
-    }
-    .heroIntro { 
-        margin-right: 0;
-        margin-top: 0;
-        font-size: 0.8rem;
-        text-align: center;
-        color: white;
-        background-color: #E25C5A;
-    }
-    .navegacion {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
     .menu {
-        font-size: 0.5rem;
+        font-size: 0.9rem;
     }
-    .logoNav {
-        width: 60px; 
+    .menuFoo a {
+        font-size: 0.5rem;
     }
     .title {
-        font-size: 1.5rem;
+        font-size: 3.5rem;
     }
-    img {
-        width: 25px;
-    }
-    .menuFoo {
-        font-size: 0.7rem;
-        margin-right: 3%;
-    }
-    .copyright {
-        font-size: 0.5rem;
-    }
-
-/*PESTAÑA PRODUCTOS MEDIA QUERIE 768*/
-    
-    .intro {
-        font-size: 1rem;
-    }
-    h4 {
-        font-size: 1rem;
-    }
-    .descripcion {
-        font-size: 0.8rem;
-    }
-    .tipoMate {
-        font-size: 1.3rem;
-    }
-    .mates {
-        grid-template-columns: 1fr;
-    }
-    .fotoMate {
-        width: 10px;
-    }
-    
-/*PESTAÑA PREGUNTAS MEDIA QUERIE 768*/
-
     .subtitle {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
-    .respuesta {
-        font-size: 0.8rem;
-    }
-
-/*PESTAÑA NOSOTROS MEDIA QUERIE 768*/
-
-    .nosotros {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        justify-items: center;
-    }
-    .textNosotros {
-        font-size: 0.8rem;
-        margin-right: 2px;
+    .introInicio {
+        font-size: 2rem;
         text-align: center;
     }
-    .fotoNosotros {
-        width: 200px;
-        margin-left: 20px;
-    }
-
-/*PESTAÑA CONTACTO MEDIA QUERIE 768*/
-
-    .titleContacto {
-        font-size: 1.5rem;
-    }
-    .subtitleContacto {
+    .titleFooter {
         font-size: 1rem;
     }
-    .mapaContacto {
-        width: 40%;
-        align-items: center;
+    .iconos {
+        font-size: 20px;
     }
-    .menuContacto{
-        
-    }
-    .btn {
+    /* Pestaña NOSOTROS hasta 768px*/
+    .fotoNosotros {
+        width: 250px;
         margin-bottom: 10%;
     }
-    
 }
 
-/*Hasta 420*/
 
-@media screen and (max-width: 420px) {
+/*Hasta 425px*/
+@media screen and (max-width: 426px){
+    .menu {
+        font-size: 0.4rem;
+    }
+    .logoNav{
+        width: 70px;
+    }
     .navegacion {
-        padding-top: 40px;
-        padding-bottom: 50px;
+        padding-top: 35px;
+        padding-bottom: 25px;
     }
-    .links {
-        font-size: 0.5rem;
-    }
-    .link {
-        margin: 0 5px;
-    }
+    .introInicio {
+        font-size: 1.5rem;
+    }   
     .title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
-    .menuFoo {
-        font-size: 0.5rem;
-        margin-right: 3%;
-    }
-    .mapa{
-        width: 90px;
-    }
-    .redes a{
-        font-size: 25px;
-    }
-
-/*PESTAÑA PRODUCTOS MEDIA QUERIE 420*/
-
-    .intro {
-        font-size: 0.5rem;
-    }
-    h4 {
-        font-size: 0.8rem;
-    }
-    .descripcion {
-        font-size: 0.5rem;
-    }
-    
-/*PESTAÑA PREGUNTAS MEDIA QUERIE 420*/
-
     .subtitle {
-        font-size: 1rem;
-    }
-    .respuesta {
-        font-size: 0.8rem;
-    }
-    h3 {
-        font-size: 0.8rem;
-    }
-
-    /*PESTAÑA CONTACTO MEDIA QUERIE 420*/
-
-    .mapaContacto {
-        width: 10%;
-    }
-    .btn{
-        padding: 10px;
-        margin-left: 37%;
-        margin-bottom: 10%;
-        margin-top: 5%;
-        font-size: 0.8rem;
-    }
-    .iconos{
-        font-size: 45px;
-    }
-
-    .form{
-        font-size: 0.8rem;
+        font-size: 2.5rem;
     }
 }
