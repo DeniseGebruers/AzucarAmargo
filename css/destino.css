@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@300&family=Montserrat:wght@100;300;700&family=Open+Sans:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -137,6 +138,16 @@ body {
   background-color: gray;
   height: 3px;
   margin: 1%; }
+
+.introduccion {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 1.5rem;
+  text-align: center; }
+
+.introduccion a {
+  text-decoration: none;
+  color: black; }
 
 .copyright {
   font-family: 'Open Sans', sans-serif;
