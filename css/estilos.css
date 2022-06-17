@@ -87,6 +87,13 @@ body {
     color: grey;
 }
 
+.intro {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
 .introduccion {
     margin-left: 2%;
     margin-right: 2%;
@@ -103,6 +110,11 @@ body {
     margin: 1%;
 }
 
+.redes {
+    display:flex;
+    width: 100%;
+}
+
 .redes a{
     text-decoration: none;
     color: gray;
@@ -111,10 +123,6 @@ body {
     color: #E25C5A;
     transform: scale(1.1);
     transition: ease-in-out .3s;
-}
-.redes {
-    display:flex;
-    width: 100%;
 }
 
 .redes__menu {

@@ -1,0 +1,42 @@
+@import "./variables";
+
+
+body {
+    display: grid;
+}
+
+.conteinerMate {
+    width: 100%
+}
+.conteinerMate img {
+    width: 100%;
+    opacity: 0.6;
+}
+.title {
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;    
+    text-align: center;
+    color: $colorTitle;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: $gray;
+}
+
+.linea {
+    background-color: $gray;
+    height: 3px;
+    margin: 1%;
+}
+
+.copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    font-style: oblique;
+}
