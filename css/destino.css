@@ -4,6 +4,73 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  display: grid; }
+
+.conteinerMate, .conteinerMate img {
+  width: 100%; }
+
+.conteinerMate img {
+  opacity: 0.6; }
+
+.title {
+  font-size: 3rem;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  text-align: center;
+  color: #E25C5A; }
+
+.subtitle {
+  font-size: 2.5rem;
+  font-family: 'Dongle', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #778899; }
+
+.linea {
+  background-color: #778899;
+  height: 3px;
+  margin: 1%; }
+
+.introduccion {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-family: 'Montserrat', sans-serif;
+  color: #778899;
+  font-size: 1.5rem;
+  text-align: center; }
+
+.introduccion a {
+  text-decoration: none;
+  color: #778899; }
+
+.copyright {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  font-style: oblique; }
+
+.pregunta {
+  font-size: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  text-align: start;
+  margin-left: 2%;
+  color: #778899; }
+
+h4 {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-left: 2%; }
+
+.respuesta {
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  margin-left: 3%;
+  margin-right: 3%; }
+
 .navegacion {
   padding-top: 50px;
   padding-bottom: 45px; }
@@ -24,7 +91,7 @@
     text-decoration: none; }
   .navegacion__link a {
     text-decoration: none;
-    color: gray;
+    color: #778899;
     margin: 0 10px;
     padding: 5px;
     position: relative; }
@@ -44,14 +111,14 @@
     transform: scaleX(1); }
   .navegacion__link a:hover {
     font-weight: bold;
-    color: gray; }
+    color: #778899; }
 
 .redes {
   display: flex;
   width: 100%; }
   .redes a {
     text-decoration: none;
-    color: gray; }
+    color: #778899; }
   .redes a i:hover {
     color: #E25C5A;
     transform: scale(1.1);
@@ -71,7 +138,7 @@
     margin: 1rem;
     position: relative;
     text-decoration: none;
-    color: gray;
+    color: #778899;
     font-weight: 300; }
   .redes__menu a::before {
     content: '';
@@ -89,7 +156,7 @@
     transform: scaleX(1); }
   .redes__menu a:hover {
     font-weight: bold;
-    color: gray; }
+    color: #778899; }
   .redes__footer {
     width: 100%;
     display: flex;
@@ -101,7 +168,7 @@
     margin-right: 2%; }
   .redes__iconos {
     text-decoration: none;
-    color: gray;
+    color: #778899;
     font-size: 30px; }
   .redes__title {
     margin-right: 3%;
@@ -110,47 +177,129 @@
     font-weight: 400;
     color: #E25C5A; }
 
-body {
-  display: grid; }
+.nosotros__foto {
+  margin-left: 50px;
+  width: 350px;
+  border-radius: 50%;
+  filter: grayscale(50%); }
 
-.conteinerMate {
-  width: 100%; }
+.nosotros__foto:hover {
+  filter: none;
+  transform: scale(1.3);
+  transition: transform 0.5s ease-in-out; }
 
-.conteinerMate img {
-  width: 100%;
-  opacity: 0.6; }
-
-.title {
-  font-size: 3rem;
-  font-family: 'Bebas Neue', cursive;
-  font-weight: 400;
-  text-align: center;
-  color: #E25C5A; }
-
-.subtitle {
-  font-size: 2.5rem;
-  font-family: 'Dongle', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  color: gray; }
-
-.linea {
-  background-color: gray;
-  height: 3px;
-  margin: 1%; }
-
-.introduccion {
-  margin-left: 2%;
-  margin-right: 2%;
+.nosotros__txt {
+  font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   text-align: center; }
 
-.introduccion a {
-  text-decoration: none;
-  color: black; }
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contacto__title {
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    margin-top: 1.5%;
+    color: #E25C5A; }
+  .contacto__subtitle {
+    font-size: 2.5rem;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 300;
+    margin-top: 2%;
+    color: gray;
+    text-align: center; }
+  .contacto__redes {
+    margin-top: 10%; }
+  .contacto__mapa {
+    border-radius: 2%;
+    width: 100%; }
+  .contacto__menu {
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    list-style: none; }
+  .contacto__menu a {
+    position: relative;
+    text-decoration: none;
+    color: gray; }
+  .contacto__menu a i:hover {
+    color: #E25C5A;
+    transform: scale(1.1);
+    transition: ease-in-out .3s; }
+  .contacto__menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out; }
+  .contacto__menu a:hover::before {
+    transform: scaleX(1); }
+  .contacto__menu a:hover {
+    font-weight: bold;
+    color: gray; }
+  .contacto__iconos {
+    text-decoration: none;
+    align-self: center;
+    color: gray;
+    font-size: 70px;
+    margin: 30% 0%; }
+  .contacto__iconos a i:hover {
+    color: #E25C5A;
+    transform: scale(1.1);
+    transition: ease-in-out .3s; }
 
-.copyright {
+.btn {
+  padding: 15px;
+  margin-left: 40%;
+  margin-top: 5%;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: white;
+  background-color: #E25C5A;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  animation: scale-up-center 0.4s none; }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
+
+.mate__introduccion {
+  font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
-  font-size: 0.9rem;
-  text-align: center;
-  font-style: oblique; }
+  font-weight: 300;
+  text-align: center; }
+
+.mate__tipo {
+  font-size: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  color: GRAY;
+  font-weight: 400;
+  text-align: start;
+  margin-left: 2%;
+  text-decoration: underline; }
+
+.mate__descripcion {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-left: 2%;
+  margin-right: 2%; }

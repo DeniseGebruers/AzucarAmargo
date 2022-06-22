@@ -22,7 +22,7 @@
     }
     &__link a {
         text-decoration: none;
-        color: $gray;
+        color: map-get($map: $colores, $key: subtitle);
         margin: 0 10px;
         padding: 5px;
         position: relative;
@@ -45,6 +45,6 @@
     }
     &__link a:hover {
         font-weight:bold;
-        color: $gray;
+        color: map-get($map: $colores, $key: subtitle);
     }
 }

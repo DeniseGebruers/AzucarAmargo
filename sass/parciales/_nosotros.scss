@@ -1,0 +1,19 @@
+@import "./mixins";
+
+.nosotros {
+    &__foto {
+        margin-left: 50px;
+        width: 350px;
+        border-radius: 50%;
+        filter: grayscale(50%);
+    }
+    &__foto:hover {
+        filter: none;
+        transform: scale(1.3);
+        transition: transform 0.5s ease-in-out;
+    }
+    &__txt {
+        font-family: $fuente;
+        @include texto;
+    }
+}

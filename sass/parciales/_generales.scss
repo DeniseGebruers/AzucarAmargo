@@ -1,5 +1,6 @@
 @import "./variables";
-
+@import "./map";
+@import "./mixins";
 
 body {
     display: grid;
@@ -9,7 +10,7 @@ body {
     width: 100%
 }
 .conteinerMate img {
-    width: 100%;
+    @extend .conteinerMate;
     opacity: 0.6;
 }
 .title {
@@ -17,7 +18,7 @@ body {
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;    
     text-align: center;
-    color: $colorTitle;
+    color: map-get($map: $colores, $key: title);
 }
 
 .subtitle {
@@ -25,11 +26,11 @@ body {
     font-family: 'Dongle', sans-serif;
     font-weight: 300;
     text-align: center;
-    color: $gray;
+    color: map-get($map: $colores, $key: subtitle);
 }
 
 .linea {
-    background-color: $gray;
+    background-color: map-get($map: $colores, $key: subtitle);
     height: 3px;
     margin: 1%;
 }
@@ -37,17 +38,42 @@ body {
 .introduccion {
     margin-left: 2%;
     margin-right: 2%;
-    font-size: 1.5rem;
-    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: map-get($map: $colores, $key: subtitle);
+    @include texto;
 }
 .introduccion a{
     text-decoration: none;
-    color: black;
+    color: map-get($map: $colores, $key: subtitle);
 }
 
 .copyright {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $fuente;
     font-size: 0.9rem;
     text-align: center;
     font-style: oblique;
+}
+
+.pregunta {
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    text-align: start;
+    margin-left: 2%;
+    color: map-get($map: $colores, $key: subtitle);
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-left: 2%;
+}
+
+.respuesta {
+    font-size: 1.5rem;
+    font-family: $fuente;
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
 }
