@@ -14,9 +14,7 @@ body {
     @extend .conteinerMate;
     opacity: 0.8;
 }
-.imagen {
-    object-position: center;
-}
+
 .title {
     font-size: 2.5rem;
     letter-spacing: 3px;
@@ -44,12 +42,18 @@ body {
     margin-left: 2%;
     margin-right: 2%;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
     color: map-get($map: $colores, $key: subtitle);
-    @include texto;
+    justify-content: center;
+    text-align: center;
 }
 .introduccion a{
     text-decoration: none;
     color: map-get($map: $colores, $key: subtitle);
+}
+.imagen {
+    width: 100%;
+    justify-content: center;
 }
 
 .copyright {
@@ -60,11 +64,11 @@ body {
 }
 
 .pregunta {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
     text-align: start;
-    margin-left: 2%;
+    margin-left: 8%;
     color: map-get($map: $colores, $key: subtitle);
 }
 
@@ -76,9 +80,16 @@ h4 {
 }
 
 .respuesta {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: $fuente;
     text-align: justify;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.propiedades {
+    @extend .pregunta;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 3px;
 }

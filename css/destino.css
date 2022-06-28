@@ -14,9 +14,6 @@ body {
 .conteinerMate img {
   opacity: 0.8; }
 
-.imagen {
-  object-position: center; }
-
 .title {
   font-size: 2.5rem;
   letter-spacing: 3px;
@@ -41,13 +38,18 @@ body {
   margin-left: 2%;
   margin-right: 2%;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
   color: #778899;
-  font-size: 1.5rem;
+  justify-content: center;
   text-align: center; }
 
 .introduccion a {
   text-decoration: none;
   color: #778899; }
+
+.imagen {
+  width: 100%;
+  justify-content: center; }
 
 .copyright {
   font-family: "Open Sans", sans-serif;
@@ -55,12 +57,12 @@ body {
   text-align: center;
   font-style: oblique; }
 
-.pregunta {
-  font-size: 2rem;
+.pregunta, .propiedades {
+  font-size: 1.5rem;
   font-family: 'Bebas Neue', cursive;
   font-weight: 400;
   text-align: start;
-  margin-left: 2%;
+  margin-left: 8%;
   color: #778899; }
 
 h4 {
@@ -70,15 +72,20 @@ h4 {
   margin-left: 2%; }
 
 .respuesta {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   text-align: justify;
-  margin-left: 3%;
-  margin-right: 3%; }
+  margin-left: 8%;
+  margin-right: 8%; }
+
+.propiedades {
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 3px; }
 
 .navegacion__logo {
   width: 100px;
-  margin-left: 20px; }
+  margin-left: 50px; }
 
 .navegacion__menu {
   display: flex;
@@ -182,8 +189,7 @@ h4 {
     color: #E25C5A; }
 
 .nosotros__foto {
-  margin-left: 50px;
-  width: 350px;
+  width: 320px;
   border-radius: 50%;
   filter: grayscale(50%); }
 
@@ -194,7 +200,7 @@ h4 {
 
 .nosotros__txt {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center; }
 
 .contacto {
@@ -295,6 +301,7 @@ h4 {
 .mate__tipo {
   font-size: 2rem;
   font-family: 'Bebas Neue', cursive;
+  letter-spacing: 3px;
   color: GRAY;
   font-weight: 400;
   text-align: start;
