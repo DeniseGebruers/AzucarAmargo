@@ -13,36 +13,35 @@
 </head>
 <body>
     <header>
-        <nav class="navegacion">
-            <a href="index.html">
-                <img class="navegacion__logo" src="img/Logo.png" alt="Logo">
-            </a>
-            <ul class="navegacion__menu">
-                <li class="navegacion__link"><a href="vistas/Productos.html">PRODUCTOS</a></li>
-                <li class="navegacion__link"><a href="vistas/Nosotros.html">NOSOTROS</a></li>
-                <li class="navegacion__link"><a href="vistas/Preguntas.html">PREGUNTAS FRECUENTES</a></li>
-                <li class="navegacion__link"><a href="vistas/Contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3 mb-3 bg-white rounded navegacion>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="logo" class="navegacion__logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navegacion__menu">
+                        <li class="navegacion__link"><a href="vistas/Productos.html">PRODUCTOS</a></li>
+                        <li class="navegacion__link"><a href="vistas/Nosotros.html">NOSOTROS</a></li>
+                        <li class="navegacion__link"><a href="vistas/Preguntas.html">PREGUNTAS FRECUENTES</a></li>
+                        <li class="navegacion__link"><a href="vistas/Contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
     </header>
     <main>
-        <h1 class="title">AZUCAR AMARGO MATES</h1>
-        <p class="subtitle">¡Bienvenido a nuestra web!</p>
-        <br>
-        <section class="container-fluid conteinerMate"> 
+        <section class="container-fluid conteinerMate shadow-sm p-3 mb-3 bg-white rounded"> 
             <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="./img/Slide1.jpg" class="d-block" alt="Mate mundo">
+                        <img class="imagen" src="./img/Slide1.jpg" class="d-block" alt="Mate">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./img/Slide2.JPG" class="d-block" alt="Box matero">
+                        <img class="imagen" src="./img/Slide2.JPG" class="d-block" alt="Mate doble">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./img/Slide3.jpg" class="d-block" alt="Mate cactus">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3500">
-                        <img src="./img/Slide4.JPG" class="d-block" alt="Box matero2">
+                        <img class="imagen" src="./img/Slide3.jpg" class="d-block" alt="Mate mundo">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -55,7 +54,6 @@
                 </button>
             </div>
         </section>
-        <br>
         <div>
             <p class="introduccion">Ofrecemos una gran cantidad de mates de algarrobo pintados, con mucho amor, a mano. Contamos con diseños propios y diseños personalizados por el cliente. Podés ver nuestro catálogo en la sección <a href="/vistas/Productos.html"> <strong>productos</strong></a>, luego me contactás y coordinamos cómo va a ser tu próximo Azúcar Amargo ♥</p>  
         </div>
