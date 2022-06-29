@@ -38,7 +38,7 @@ body {
   margin-left: 2%;
   margin-right: 2%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #778899;
   justify-content: center;
   text-align: center; }
@@ -52,13 +52,18 @@ body {
   align-items: center;
   justify-content: center; }
 
+.imagen__mate {
+  width: 80%;
+  align-items: center;
+  justify-content: center; }
+
 .copyright {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   text-align: center;
   font-style: oblique; }
 
-.pregunta, .propiedades {
+.pregunta {
   font-size: 1.5rem;
   font-family: 'Bebas Neue', cursive;
   font-weight: 400;
@@ -80,9 +85,19 @@ h4 {
   margin-right: 8%; }
 
 .propiedades {
+  font-size: 2.5rem;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  color: #778899;
   justify-content: center;
   text-align: center;
   letter-spacing: 3px; }
+  @media screen and (max-width: 768px) {
+    .propiedades {
+      font-size: 1.8rem; } }
+  @media screen and (max-width: 1024px) {
+    .propiedades {
+      font-size: 2rem; } }
 
 .navegacion__logo {
   width: 100px;
