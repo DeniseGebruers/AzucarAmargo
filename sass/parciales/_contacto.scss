@@ -84,19 +84,20 @@
 
 .btn {
     padding: 15px;
-    margin-left: 40%;
-    margin-top: 5%;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
-    color: map-get($map: $colores, $key: boton);
-    background-color: map-get($map: $colores, $key: title);
+    color: white;
+    background-color: gray;
     border: none;
     border-radius: 30px;
-    cursor: pointer;
     animation: scale-up-center 0.4s none;
 }
+
+.btn:hover{
+    background-color: map-get($map: $colores, $key: title);
+    }
 
 @keyframes scale-up-center {
     0% {
