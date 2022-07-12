@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@300&family=Montserrat:wght@100;300;700&family=Open+Sans:wght@300&display=swap");
 * {
   margin: 0;
@@ -29,17 +30,12 @@ body {
   text-align: center;
   color: #778899; }
 
-.linea {
-  background-color: #778899;
-  height: 3px;
-  margin: 1%; }
-
 .introduccion {
   margin-left: 2%;
   margin-right: 2%;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
-  color: #778899;
+  color: black;
   justify-content: center;
   text-align: center; }
 
@@ -56,7 +52,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   text-align: center;
-  font-style: oblique; }
+  color: white; }
 
 .pregunta {
   font-size: 1.5rem;
@@ -67,10 +63,12 @@ body {
   color: #778899; }
 
 h4 {
-  font-size: 1.5rem;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  margin-left: 2%; }
+  margin-left: 3%;
+  font-weight: bold;
+  color: gray; }
 
 .respuesta {
   font-size: 1rem;
@@ -88,6 +86,84 @@ h4 {
   text-align: center;
   letter-spacing: 4px; }
 
+.footer {
+  margin-top: 1%;
+  width: 100%;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white; }
+
+.footer:hover {
+  color: black; }
+
+.info {
+  background-image: url(/img/Perita1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer; }
+
+.info__capa {
+  position: absolute;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms ease-out;
+  color: white;
+  opacity: 0; }
+
+.info .info__capa:hover {
+  opacity: 1;
+  visibility: visible; }
+
+.grilla {
+  margin: 0 3rem; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-gap: 2rem;
+  justify-items: center; }
+
+.diseño {
+  position: relative;
+  width: 90%; }
+
+.diseño__title {
+  position: absolute;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms ease-out;
+  color: white;
+  opacity: 0;
+  text-decoration: none; }
+
+.diseño__title:hover {
+  opacity: 1;
+  visibility: visible; }
+
+.diseño__mate img {
+  width: 100%;
+  height: auto; }
+
 .navegacion__logo {
   width: 100px;
   margin-left: 10px; }
@@ -96,14 +172,14 @@ h4 {
   display: flex;
   justify-content: flex-end;
   text-align: end;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
   list-style: none;
   text-decoration: none; }
 
 .navegacion__link a {
   text-decoration: none;
+  font-weight: bold;
   color: #778899;
   margin: 0 10px;
   padding: 5px;
@@ -126,12 +202,13 @@ h4 {
   transform: scaleX(1); }
 
 .navegacion__link a:hover {
-  font-weight: bold;
-  color: #778899; }
+  color: black; }
 
 .redes {
   display: flex;
-  width: 100%; }
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%; }
   .redes a {
     text-decoration: none;
     color: #778899; }
@@ -139,59 +216,34 @@ h4 {
     color: #E25C5A;
     transform: scale(1.1);
     transition: ease-in-out .3s; }
-  .redes__menu {
-    width: 100%;
-    font-size: 0.8rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    list-style: none;
-    text-decoration: none;
-    align-items: center; }
-  .redes__menu a {
-    margin: 1rem;
-    position: relative;
-    text-decoration: none;
-    color: #778899;
-    font-weight: 300; }
-  .redes__menu a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
-    z-index: 1;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.5s ease-in-out; }
-  .redes__menu a:hover::before {
-    transform: scaleX(1); }
-  .redes__menu a:hover {
-    font-weight: bold;
-    color: #778899; }
   .redes__footer {
-    width: 100%;
     display: flex;
-    justify-content: end;
-    align-items: baseline; }
+    justify-content: center; }
   .redes__footer a {
-    display: flex;
-    justify-content: end;
-    margin-right: 2%; }
+    margin: 0 7%; }
   .redes__iconos {
     text-decoration: none;
-    color: #778899;
-    font-size: 30px; }
+    color: white;
+    font-size: 40px; }
   .redes__title {
     margin-right: 3%;
     font-size: rem;
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
     color: #E25C5A; }
+  .redes__pagos {
+    font-size: 40px;
+    color: gray;
+    background-color: white;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .redes__pagos p {
+    font-size: 1rem;
+    color: #E25C5A;
+    margin-top: 5%; }
 
 .nosotros__foto {
   width: 320px;
@@ -225,11 +277,9 @@ h4 {
     margin-top: 2%;
     color: gray;
     text-align: center; }
-  .contacto__redes {
-    margin-top: 10%; }
   .contacto__mapa {
     border-radius: 2%;
-    width: 100%; }
+    width: 80%; }
   .contacto__menu {
     font-size: 0.8rem;
     font-family: 'Montserrat', sans-serif;
@@ -269,9 +319,8 @@ h4 {
     text-decoration: none;
     align-self: center;
     color: gray;
-    font-size: 70px;
-    margin: 30% 0%; }
-  .contacto__iconos a i:hover {
+    font-size: 60px; }
+  .contacto__iconos:hover {
     color: #E25C5A;
     transform: scale(1.1);
     transition: ease-in-out .3s; }
@@ -298,27 +347,26 @@ h4 {
     transform: scale(1); } }
 
 .mate__introduccion {
-  font-size: 1.5rem;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   text-align: center; }
 
 .mate__tipo {
   font-size: 2rem;
-  font-family: 'Bebas Neue', cursive;
   letter-spacing: 3px;
+  font-family: 'Bebas Neue', cursive;
   color: GRAY;
   font-weight: 400;
   text-align: start;
-  margin-left: 2%;
-  text-decoration: underline; }
+  margin-left: 3%; }
 
 .mate__descripcion {
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  margin-left: 2%;
-  margin-right: 2%; }
+  margin-left: 3%;
+  margin-right: 3%; }
 
 .hero {
   background-image: url(/img/Inicio.jpg);

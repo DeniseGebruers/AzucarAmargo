@@ -19,12 +19,9 @@
         color: gray;
         text-align: center;
     }
-    &__redes {
-        margin-top: 10%;
-    }
     &__mapa {
         border-radius: 2%;
-        width: 100%;
+        width: 80%;
     }
     &__menu {
         font-size: 0.8rem;
@@ -72,10 +69,10 @@
         text-decoration: none;
         align-self: center;
         color: gray;
-        font-size: 70px;
-        margin: 30% 0%;
+        font-size: 60px;
+        
     }
-    &__iconos a i:hover{
+    &__iconos:hover{
         color: map-get($map: $colores, $key: title);
         transform: scale(1.1);
         transition: ease-in-out .3s;

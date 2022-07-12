@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<head>    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +9,8 @@
     <meta name="keywords" content="mates, mates pintados, mates algarrobo, mate de madera">
     <title>Azúcar Amargo Mates</title>
     <link rel="stylesheet" href="css/destino.css">
+    <script src="https://kit.fontawesome.com/0b7e805c62.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -33,7 +34,7 @@
         <div class="hero">
             <section class="hero__principal">
                 <h1 class="hero__title">AZÚCAR AMARGO MATES</h1>
-                <p class="hero__descripcion">Conocé nuestros mates pintados a mano</p>
+                <p class="hero__descripcion">Conocé nuestros diseños</p>
                 <button type="button" class="btn btn-secondary hero__btn"> <a href="/vistas/Productos.html">Aquí</a></button>
             </section>
         </div>
@@ -48,31 +49,33 @@
                     <p class="introduccion">En Argentina, cada habitante consume al rededor de 6,5 kg de <strong>yerba mate</strong> por año. De esta manera, nuestro organismo recibe una gran fuente de minerales y vitaminas. Además, es un increíble antioxidante y contiene un efecto energizante.</p>
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 d-flex justify-content-center">
-                    <img class="img-fluid imagen__mate" src="img/YerbaMate2.jpeg" alt="YerbaMate">
+                    <img src="img/YerbaMate2.jpeg" alt="YerbaMate" class="img-fluid imagen__mate" data-aos="fade-left">
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-6 col-sm-6 col-md-6 d-flex justify-content-center" >
-                    <img class="img-fluid imagen__mate" src="img/MateAlgarrobo.jpg" alt="MatesAlgarrobo">
+                    <img class="img-fluid imagen__mate" src="img/MateAlgarrobo.jpg" alt="MatesAlgarrobo" data-aos="fade-right">
                 </div>
                 <div class="col-6 col-sm-6 col-md-6 d-flex flex-column justify-content-center">
-                    <p class="introduccion">En <strong>Azúcar Amargo Mates</strong>, tenemos una gran cantidad de mates de algarrobo pintados a mano. Contamos con diseños propios y diseños personalizados a pedido de cada cliente. <br> ¡Te invito a que veas el catálogo y elijas tu próximo Azúcar Amargo!</p>
+                    <p class="introduccion">En <strong>Azúcar Amargo Mates</strong>, tenemos una gran cantidad de mates de algarrobo pintados a mano. Contamos con diseños propios y diseños personalizados a pedido de cada cliente. <br> ¡Te invito a que veas el catálogo y elijas tu próximo <strong>mate</strong>!</p>
                 </div>
             </div>
         </div>
+        <br><br><br>
+        <div class="container" >
+            <section class="row redes__pagos" >
+                <i class="col-md-4 fa-solid fa-truck" style="border-right: 1px solid gray;"><p style="font-family: 'Open Sans', sans-serif">Envíos a todo el país</p></i>
+                <i class="col-md-4 fa-solid fa-circle-dollar-to-slot" style="border-right: 1px solid gray;">
+                <p style="font-family: 'Open Sans', sans-serif;">Aceptamos efectivo, Mercado Pago o transferencia</p></i>
+                <i class="col-md-4 fa-solid fa-lock"><p style="font-family: 'Open Sans', sans-serif;">Compra segura</p></i>
+            </section>
+        </div>
     </main>
-    <hr class="linea">
-    <footer>
+    <footer style="background-color: gray;">
+        <h5 class="footer">¡SEGUINOS!</h5>
         <div class="redes">
-            <ul class="redes__menu">
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="vistas/Productos.html">PRODUCTOS</a></li>
-                <li><a href="vistas/Nosotros.html">NOSOTROS</a></li>
-                <li><a href="vistas/Preguntas.html">PREGUNTAS FRECUENTES</a></li>
-                <li><a href="vistas/Contacto.html">CONTACTO</a></li>
-            </ul>
             <div class="redes__footer">
                 <a href="https://www.instagram.com/azucaramargo.mates/"><i class="fa-brands fa-instagram redes__iconos"></i></a>
                 <a href="https://www.facebook.com/azucaramargo.mates"><i class="fa-brands fa-facebook redes__iconos"></i></a>
@@ -81,7 +84,13 @@
         <div class="copyright">
             <strong>© 2022 Azúcar Amargo Mates, todos los derechos reservados. </strong>
         </div>
+        <br>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
+
