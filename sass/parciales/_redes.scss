@@ -2,7 +2,9 @@
 
 .redes {
     display:flex;
-    width: 100%;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
     & a{
         text-decoration: none;
         color: map-get($map: $colores, $key: subtitle);
@@ -12,69 +14,38 @@
         transform: scale(1.1);
         transition: ease-in-out .3s;
     }
-    &__menu {
-        width: 100%;
-        font-size: 0.8rem;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        position: relative;
-        display: flex;
-        justify-content: flex-start;
-        list-style: none;
-        text-decoration: none;
-        align-items: center;
-    }
-    &__menu a {
-        margin: 1rem;
-        position: relative;
-        text-decoration: none;
-        color: map-get($map: $colores, $key: subtitle);
-        font-weight: 300;
-    }
-    &__menu a::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
-        z-index: 1;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform 0.5s ease-in-out;
-    }
-    &__menu a:hover::before {
-        transform: scaleX(1);
-    }
-    &__menu a:hover {
-        font-weight: bold;
-        color: map-get($map: $colores, $key: subtitle);
-    }
-
     &__footer {
-        width: 100%;
         display: flex;
-        justify-content: end;
-        align-items: baseline;
+        justify-content: center;
     }
     &__footer a {
-        display: flex;
-        justify-content: end;
-        margin-right: 2%;
+        margin: 0 7%;
     }
-
     &__iconos {
         text-decoration: none;
-        color: map-get($map: $colores, $key: subtitle);
-        font-size: 30px;
+        color: white;
+        font-size: 40px;
     }
-    
     &__title {
         margin-right: 3%;
         font-size: rem;
         font-family: 'Bebas Neue', cursive;
         font-weight: 400;
         color: map-get($map: $colores, $key: title);
+    }
+    &__pagos {
+        font-size: 40px;
+        color: gray;
+        background-color: white;
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__pagos p {
+        font-size: 1rem;
+        color: map-get($map: $colores, $key: title);
+        margin-top: 5%;
     }
 }
