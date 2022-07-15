@@ -34,13 +34,8 @@ body {
   margin-left: 2%;
   margin-right: 2%;
   font-family: 'Montserrat', sans-serif;
-<<<<<<< HEAD
-  font-size: 1.1rem;
-  color: #778899;
-=======
   font-size: 1.2rem;
   color: black;
->>>>>>> devrama3
   justify-content: center;
   text-align: center; }
 
@@ -48,22 +43,10 @@ body {
   text-decoration: none;
   color: gray; }
 
-<<<<<<< HEAD
-.imagen {
-  width: 100%;
-  align-items: center;
-  justify-content: center; }
-
-.imagen__mate {
-  width: 80%;
-  align-items: center;
-  justify-content: center; }
-=======
 .imagen__mate {
   width: 40vh;
   text-align: center;
   border-radius: 50%; }
->>>>>>> devrama3
 
 .copyright {
   font-family: "Open Sans", sans-serif;
@@ -95,21 +78,6 @@ h4 {
   margin-right: 8%; }
 
 .propiedades {
-<<<<<<< HEAD
-  font-size: 2.5rem;
-  font-family: 'Bebas Neue', cursive;
-  font-weight: 400;
-  color: #778899;
-  justify-content: center;
-  text-align: center;
-  letter-spacing: 3px; }
-  @media screen and (max-width: 768px) {
-    .propiedades {
-      font-size: 1.8rem; } }
-  @media screen and (max-width: 1024px) {
-    .propiedades {
-      font-size: 2rem; } }
-=======
   font-size: 2rem;
   font-family: 'Bebas Neue', cursive;
   font-weight: 400;
@@ -131,34 +99,6 @@ h4 {
 
 .footer:hover {
   color: black; }
-
-.info {
-  background-image: url(/img/Perita1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  cursor: pointer; }
-
-.info__capa {
-  position: absolute;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 3rem;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 500ms ease-out;
-  color: white;
-  opacity: 0; }
-
-.info .info__capa:hover {
-  opacity: 1;
-  visibility: visible; }
 
 .grilla {
   margin: 0 3rem; }
@@ -195,7 +135,6 @@ h4 {
 .diseño__mate img {
   width: 100%;
   height: auto; }
->>>>>>> devrama3
 
 .navegacion__logo {
   width: 100px;
@@ -402,7 +341,7 @@ h4 {
   margin-right: 3%; }
 
 .hero {
-  background-image: url(/img/Inicio.jpg);
+  background-image: url(../../img/Inicio.jpg);
   background-size: cover;
   width: 100%;
   height: 75vh;
