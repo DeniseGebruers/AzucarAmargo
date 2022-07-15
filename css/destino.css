@@ -28,7 +28,7 @@ body {
   font-family: 'Dongle', sans-serif;
   font-weight: 300;
   text-align: center;
-  color: #778899; }
+  color: gray; }
 
 .introduccion {
   margin-left: 2%;
@@ -41,7 +41,7 @@ body {
 
 .introduccion a {
   text-decoration: none;
-  color: #778899; }
+  color: gray; }
 
 .imagen__mate {
   width: 40vh;
@@ -60,7 +60,7 @@ body {
   font-weight: 400;
   text-align: start;
   margin-left: 8%;
-  color: #778899; }
+  color: gray; }
 
 h4 {
   font-size: 1.2rem;
@@ -180,7 +180,7 @@ h4 {
 .navegacion__link a {
   text-decoration: none;
   font-weight: bold;
-  color: #778899;
+  color: gray;
   margin: 0 10px;
   padding: 5px;
   position: relative; }
@@ -211,7 +211,7 @@ h4 {
   margin-bottom: 1%; }
   .redes a {
     text-decoration: none;
-    color: #778899; }
+    color: gray; }
   .redes a i:hover {
     color: #E25C5A;
     transform: scale(1.1);
