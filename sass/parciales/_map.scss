@@ -1,6 +1,15 @@
-$colores: (
-    title: #E25C5A,
-    subtitle: gray,
-    boton: white,
-)
+@import "./variables";
 
+$colores: (
+    title: $rosa,
+    subtitle: $gris,
+    boton: white,
+    descripcion: $negro,
+);
+
+$fuentes: (
+    title: $fuente2,
+    subtitle: $fuente4,
+    menu: $fuente1,
+    texto: $fuente3,
+);

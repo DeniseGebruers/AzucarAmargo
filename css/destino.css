@@ -1,10 +1,22 @@
 @charset "UTF-8";
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@300&family=Montserrat:wght@100;300;700&family=Open+Sans:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
 body {
   display: grid; }
 
@@ -18,14 +30,14 @@ body {
 .title {
   font-size: 2.5rem;
   letter-spacing: 3px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: 400;
   text-align: center;
   color: #E25C5A; }
 
 .subtitle {
   font-size: 2rem;
-  font-family: 'Dongle', sans-serif;
+  font-family: "Dongle", sans-serif;
   font-weight: 300;
   text-align: center;
   color: gray; }
@@ -33,7 +45,7 @@ body {
 .introduccion {
   margin-left: 2%;
   margin-right: 2%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   color: black;
   justify-content: center;
@@ -43,9 +55,12 @@ body {
   text-decoration: none;
   color: gray; }
 
+.imagen__yerba {
+  width: 30vh;
+  border-radius: 50%; }
+
 .imagen__mate {
   width: 40vh;
-  text-align: center;
   border-radius: 50%; }
 
 .copyright {
@@ -56,7 +71,7 @@ body {
 
 .pregunta {
   font-size: 1.5rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: 400;
   text-align: start;
   margin-left: 8%;
@@ -64,7 +79,7 @@ body {
 
 h4 {
   font-size: 1.2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   margin-left: 3%;
   font-weight: bold;
@@ -79,7 +94,7 @@ h4 {
 
 .propiedades {
   font-size: 2rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: 400;
   color: black;
   justify-content: center;
@@ -90,52 +105,32 @@ h4 {
   margin-top: 1%;
   width: 100%;
   font-size: 1.3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   display: flex;
   flex-direction: column;
   text-align: center;
   color: white; }
 
-.footer:hover {
-  color: black; }
+.navbar-toggler {
+  border-radius: 50%;
+  background-color: white;
+  padding: 1.5%;
+  border: 5px solid; }
 
-.grilla {
-  margin: 0 3rem; }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  grid-gap: 2rem;
-  justify-items: center; }
-
-.diseño {
-  position: relative;
-  width: 90%; }
-
-.diseño__title {
-  position: absolute;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 3rem;
-  background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
+.navbar-nav .navegacion__link {
   display: flex;
+  margin-top: 5px;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  transition: all 500ms ease-out;
-  color: white;
-  opacity: 0;
-  text-decoration: none; }
+  align-items: center; }
 
-.diseño__title:hover {
-  opacity: 1;
-  visibility: visible; }
-
-.diseño__mate img {
-  width: 100%;
-  height: auto; }
-
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
 .navegacion__logo {
   width: 100px;
   margin-left: 10px; }
@@ -145,9 +140,9 @@ h4 {
   justify-content: flex-end;
   text-align: end;
   font-size: 0.9rem;
-  font-family: 'Montserrat', sans-serif;
-  list-style: none;
-  text-decoration: none; }
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none; }
 
 .navegacion__link a {
   text-decoration: none;
@@ -176,6 +171,12 @@ h4 {
 .navegacion__link a:hover {
   color: black; }
 
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
 .redes {
   display: flex;
   justify-content: center;
@@ -212,11 +213,19 @@ h4 {
     justify-content: center;
     align-items: center;
     text-align: center; }
+  .redes__pagos i {
+    border-right: 1px solid gray; }
   .redes__pagos p {
     font-size: 1rem;
     color: #E25C5A;
     margin-top: 5%; }
 
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
 .nosotros__foto {
   width: 320px;
   border-radius: 50%;
@@ -232,19 +241,25 @@ h4 {
   font-size: 1.2rem;
   text-align: center; }
 
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
 .contacto {
   display: flex;
   flex-direction: column;
   align-items: center; }
   .contacto__title {
     font-size: 3rem;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     font-weight: 400;
     margin-top: 1.5%;
     color: #E25C5A; }
   .contacto__subtitle {
     font-size: 2.5rem;
-    font-family: 'Dongle', sans-serif;
+    font-family: "Dongle", sans-serif;
     font-weight: 300;
     margin-top: 2%;
     color: gray;
@@ -254,7 +269,7 @@ h4 {
     width: 80%; }
   .contacto__menu {
     font-size: 0.8rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -318,34 +333,47 @@ h4 {
   100% {
     transform: scale(1); } }
 
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
 .mate__introduccion {
   font-size: 1.2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-align: center; }
 
 .mate__tipo {
   font-size: 2rem;
   letter-spacing: 3px;
-  font-family: 'Bebas Neue', cursive;
-  color: GRAY;
+  font-family: "Bebas Neue", cursive;
+  color: gray;
   font-weight: 400;
   text-align: start;
   margin-left: 3%; }
 
 .mate__descripcion {
   font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   margin-left: 3%;
   margin-right: 3%; }
 
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
 .hero {
   background-image: url(../img/Inicio.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 75vh;
-  background-position: center;
   position: relative; }
   .hero__principal {
     position: absolute;
@@ -359,13 +387,17 @@ h4 {
   .hero__title {
     font-size: 6rem;
     letter-spacing: 7px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     color: black;
-    text-shadow: 0 0 1px white; }
+    text-shadow: 0 0 1px white;
+    display: flex;
+    text-align: center; }
   .hero__descripcion {
     font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase; }
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center; }
   .hero__btn {
     width: 150px;
     display: flex;
@@ -373,3 +405,66 @@ h4 {
   .hero__btn a {
     text-decoration: none;
     color: white; }
+
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
+/*VARIABLES COLORES*/
+/*VARIABLES FUENTES*/
+/*VARIABLES TAMAÑO DE FUENTE*/
+.grilla {
+  margin: 0 3rem; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem; }
+
+.diseño {
+  position: relative;
+  width: 90%; }
+  .diseño__title {
+    position: absolute;
+    font-family: "Bebas Neue", cursive;
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease-out;
+    color: white;
+    opacity: 0;
+    text-decoration: none; }
+  .diseño__title:hover {
+    opacity: 1;
+    visibility: visible; }
+  .diseño__mate img {
+    width: 100%;
+    height: auto; }
+
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 3rem; }
+  .navbar-toggler {
+    padding: 1.5%; }
+  .imagen__mate {
+    height: auto; }
+  .redes__pagos i {
+    border-right: none; }
+  .grid-container {
+    grid-template-columns: 1fr; }
+  .diseño__title {
+    font-size: 2rem; }
+  .footer {
+    font-size: 1rem; }
+  .redes__iconos {
+    font-size: 30px; }
+  .copyright {
+    font-size: 0.5rem; }
+  .nosotros__foto {
+    width: 280px;
+    margin-bottom: 3rem; }
+  .contacto__mapa {
+    margin-top: 2rem; } }

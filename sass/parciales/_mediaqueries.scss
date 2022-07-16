@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+    .hero__title {
+        font-size: 3rem;
+    }
+    .navbar-toggler {
+        padding: 1.5%;
+    }
+    .imagen__mate {
+        height: auto;
+    }
+    .redes__pagos i {
+        border-right: none;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .diseño__title {
+        font-size: 2rem;
+    }
+    .footer {
+        font-size: 1rem;
+    }
+    .redes__iconos {
+        font-size: 30px;
+    }
+    .copyright {
+        font-size: 0.5rem;
+    }
+    .nosotros__foto {
+        width: 280px; 
+        margin-bottom: 3rem;
+    }
+    .contacto__mapa {
+        margin-top: 2rem;
+    }
+}

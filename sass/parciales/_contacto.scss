@@ -1,22 +1,24 @@
 @import "./variables";
+@import "./map";
+@import "./mixins";
 
 .contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
     &__title {
-        font-size: 3rem;
-        font-family: 'Bebas Neue', cursive;
+        font-size: $tamaño3;
+        font-family: $fuente2;
         font-weight: 400;
         margin-top: 1.5%;
-        color: #E25C5A;
+        color: $rosa;
     }
     &__subtitle {
         font-size: 2.5rem;
-        font-family: 'Dongle', sans-serif;
+        font-family: $fuente4;
         font-weight: 300;
         margin-top: 2%;
-        color: gray;
+        color: $gris;
         text-align: center;
     }
     &__mapa {
@@ -25,7 +27,7 @@
     }
     &__menu {
         font-size: 0.8rem;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $fuente1;
         font-weight: 300;
         display: flex;
         flex-direction: column;
@@ -37,10 +39,10 @@
     &__menu a {
         position: relative;
         text-decoration: none;
-        color: gray;
+        color: $gris;
     }
     &__menu a i:hover{
-        color: #E25C5A;
+        color: $rosa;
         transform: scale(1.1);
         transition: ease-in-out .3s;
     }
@@ -63,12 +65,12 @@
     
     &__menu a:hover {
         font-weight: bold;
-        color: gray;
+        color: $gris;
     }
     &__iconos {
         text-decoration: none;
         align-self: center;
-        color: gray;
+        color: $gris;
         font-size: 60px;
         
     }
@@ -86,7 +88,7 @@
     letter-spacing: 2.5px;
     font-weight: 500;
     color: white;
-    background-color: gray;
+    background-color: $gris;
     border: none;
     border-radius: 30px;
     animation: scale-up-center 0.4s none;

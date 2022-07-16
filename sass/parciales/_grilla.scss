@@ -1,0 +1,41 @@
+@import "./variables";
+@import "./map";
+@import "./mixins";
+
+.grilla {
+    margin: 0 3rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.diseño {
+    position: relative;
+    width: 90%;
+    &__title {
+        position: absolute;
+        font-family: $fuente2;
+        font-size: $tamaño3;
+        background: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 500ms ease-out;
+        color: $blanco;
+        opacity: 0;
+        text-decoration: none;
+        }
+    &__title:hover {
+        opacity: 1;
+        visibility: visible;
+        }
+    &__mate img {
+        width: 100%;
+        height: auto;
+    }
+}

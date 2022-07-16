@@ -1,4 +1,10 @@
-@mixin texto {
-    font-size: 1.2rem;
-    text-align: center;
+@mixin menu {
+    text-decoration: none;
+    list-style: none;
+}
+
+@mixin background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

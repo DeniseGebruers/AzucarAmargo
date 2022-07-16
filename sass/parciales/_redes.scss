@@ -1,7 +1,9 @@
 @import "./variables";
+@import "./map";
+@import "./mixins";
 
 .redes {
-    display:flex;
+    display: flex;
     justify-content: center;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -36,12 +38,15 @@
     &__pagos {
         font-size: 40px;
         color: gray;
-        background-color: white;
+        background-color: $blanco;
         padding: 1%;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+    &__pagos i {
+        border-right: 1px solid $gris;
     }
     &__pagos p {
         font-size: 1rem;

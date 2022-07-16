@@ -1,3 +1,5 @@
+@import "./variables";
+@import "./map";
 @import "./mixins";
 
 .nosotros {
@@ -12,7 +14,8 @@
         transition: transform 0.5s ease-in-out;
     }
     &__txt {
-        font-family: $fuente;
-        @include texto;
+        font-family: $fuente3;
+        font-size: $tamaño1;
+        text-align: center;
     }
 }
