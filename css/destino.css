@@ -1,22 +1,10 @@
 @charset "UTF-8";
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@300&family=Montserrat:wght@100;300;700&family=Open+Sans:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
 body {
   display: grid; }
 
@@ -112,6 +100,9 @@ h4 {
   text-align: center;
   color: white; }
 
+.footer:hover {
+  color: black; }
+
 .navbar-toggler {
   border-radius: 50%;
   background-color: white;
@@ -125,17 +116,12 @@ h4 {
   justify-content: center;
   align-items: center; }
 
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
 .navegacion__logo {
   width: 100px;
   margin-left: 10px; }
 
 .navegacion__menu {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   text-align: end;
@@ -171,12 +157,6 @@ h4 {
 .navegacion__link a:hover {
   color: black; }
 
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
 .redes {
   display: flex;
   justify-content: center;
@@ -220,12 +200,6 @@ h4 {
     color: #E25C5A;
     margin-top: 5%; }
 
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
 .nosotros__foto {
   width: 320px;
   border-radius: 50%;
@@ -241,12 +215,6 @@ h4 {
   font-size: 1.2rem;
   text-align: center; }
 
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
 .contacto {
   display: flex;
   flex-direction: column;
@@ -333,12 +301,6 @@ h4 {
   100% {
     transform: scale(1); } }
 
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
 .mate__introduccion {
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
@@ -361,12 +323,6 @@ h4 {
   margin-left: 3%;
   margin-right: 3%; }
 
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
 .hero {
   background-image: url(../img/Inicio.jpg);
   background-position: center;
@@ -406,12 +362,6 @@ h4 {
     text-decoration: none;
     color: white; }
 
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
-/*VARIABLES COLORES*/
-/*VARIABLES FUENTES*/
-/*VARIABLES TAMAÑO DE FUENTE*/
 .grilla {
   margin: 0 3rem; }
 
@@ -449,8 +399,6 @@ h4 {
     font-size: 3rem; }
   .navbar-toggler {
     padding: 1.5%; }
-  .imagen__mate {
-    height: auto; }
   .redes__pagos i {
     border-right: none; }
   .grid-container {
