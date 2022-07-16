@@ -46,6 +46,7 @@ body {
     color: map-get($map: $colores, $key: subtitle);
 }
 
+
 .imagen__yerba {
     width: 30vh;
     border-radius: 50%;
@@ -88,9 +89,9 @@ h4 {
 }
 
 .propiedades {
+    width: 100%;
     font-size: $tamaño2;
     font-family: $fuente2;
-    font-weight: 400;
     color: $negro;
     justify-content: center;
     text-align: center;

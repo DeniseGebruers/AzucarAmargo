@@ -80,9 +80,9 @@ h4 {
   margin-right: 8%; }
 
 .propiedades {
+  width: 100%;
   font-size: 2rem;
   font-family: "Bebas Neue", cursive;
-  font-weight: 400;
   color: black;
   justify-content: center;
   text-align: center;
