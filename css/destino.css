@@ -221,14 +221,14 @@ h4 {
   .contacto__title {
     font-size: 2.5rem;
     font-family: "Bebas Neue", cursive;
+    letter-spacing: 3px;
     font-weight: 400;
     margin-top: 1.5%;
     color: #E25C5A; }
   .contacto__subtitle {
-    font-size: 2.5rem;
-    font-family: "Dongle", sans-serif;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    margin-top: 2%;
     color: gray;
     text-align: center; }
   .contacto__mapa {
@@ -417,7 +417,8 @@ h4 {
   .contacto__mapa {
     margin-top: 2rem; }
   .contacto__subtitle {
-    font-size: 1.8rem; }
+    font-size: 1rem;
+    margin-bottom: 15px; }
   .mate__introduccion {
     margin: 0 1rem;
     font-size: 1rem; }
