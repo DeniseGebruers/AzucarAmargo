@@ -278,6 +278,11 @@ h4 {
     transform: scale(1.1);
     transition: ease-in-out .3s; }
 
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .btn {
   padding: 15px;
   font-size: 1rem;
