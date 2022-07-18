@@ -46,7 +46,6 @@ body {
     color: map-get($map: $colores, $key: subtitle);
 }
 
-
 .imagen__yerba {
     width: 30vh;
     border-radius: 50%;
@@ -68,7 +67,7 @@ body {
     font-family: $fuente2;
     font-weight: 400;
     text-align: start;
-    margin-left: 8%;
+    margin: 0 8%;
     color: $gris;
 }
 
@@ -83,9 +82,8 @@ h4 {
 
 .respuesta {
     font-size: 1rem;
-    font-family: $fuente3;
-    margin-left: 8%;
-    margin-right: 8%;
+    font-family: $fuente1;
+    margin: 0 8%;
 }
 
 .propiedades {

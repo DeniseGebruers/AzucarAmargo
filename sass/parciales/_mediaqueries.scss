@@ -8,8 +8,13 @@
     .redes__pagos i {
         border-right: none;
     }
+    .grilla {
+        width: 80%;
+        margin: 0 2rem;
+    }
     .grid-container {
         grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
     }
     .diseño__title {
         font-size: 2rem;
@@ -24,8 +29,21 @@
         font-size: 0.5rem;
     }
     .nosotros__foto {
-        width: 280px; 
+        width: 270px; 
         margin-bottom: 3rem;
+    }
+    .nosotros__txt {
+        font-size: 1.1rem;
+        margin: 0 1rem;
+    }
+    .btn {
+        padding: 10px;
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        margin: 0 5rem;
+    }
+    .form {
+        margin: 0 0.5rem;
     }
     .contacto__mapa {
         margin-top: 2rem;
@@ -39,12 +57,13 @@
         font-size: 1rem;
     }
     .mate__tipo {
-        margin: 0 1rem;
+        margin: 0 1.5rem;
     }
     .mate__descripcion {
-        margin: 0 1rem;
+        margin: 0 1.5rem;
+        font-size: 1rem;
     }
     h4 {
-        margin: 0 1rem;
+        margin: 0 1.5rem;
     }
 }

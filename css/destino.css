@@ -62,7 +62,7 @@ body {
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
   text-align: start;
-  margin-left: 8%;
+  margin: 0 8%;
   color: gray; }
 
 h4 {
@@ -75,9 +75,8 @@ h4 {
 
 .respuesta {
   font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
-  margin-left: 8%;
-  margin-right: 8%; }
+  font-family: "Montserrat", sans-serif;
+  margin: 0 8%; }
 
 .propiedades {
   width: 100%;
@@ -210,7 +209,7 @@ h4 {
   transition: transform 0.5s ease-in-out; }
 
 .nosotros__txt {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   text-align: center; }
 
@@ -362,16 +361,16 @@ h4 {
     color: white; }
 
 .grilla {
-  margin: 0 3rem; }
+  margin: 0 5rem; }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem; }
+  grid-gap: 2rem; }
 
 .diseño {
   position: relative;
-  width: 90%; }
+  width: 100%; }
   .diseño__title {
     position: absolute;
     font-family: "Bebas Neue", cursive;
@@ -401,8 +400,12 @@ h4 {
     padding: 1.5%; }
   .redes__pagos i {
     border-right: none; }
+  .grilla {
+    width: 80%;
+    margin: 0 2rem; }
   .grid-container {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr;
+    grid-gap: 0.5rem; }
   .diseño__title {
     font-size: 2rem; }
   .footer {
@@ -412,8 +415,18 @@ h4 {
   .copyright {
     font-size: 0.5rem; }
   .nosotros__foto {
-    width: 280px;
+    width: 270px;
     margin-bottom: 3rem; }
+  .nosotros__txt {
+    font-size: 1.1rem;
+    margin: 0 1rem; }
+  .btn {
+    padding: 10px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin: 0 5rem; }
+  .form {
+    margin: 0 0.5rem; }
   .contacto__mapa {
     margin-top: 2rem; }
   .contacto__subtitle {
@@ -423,8 +436,9 @@ h4 {
     margin: 0 1rem;
     font-size: 1rem; }
   .mate__tipo {
-    margin: 0 1rem; }
+    margin: 0 1.5rem; }
   .mate__descripcion {
-    margin: 0 1rem; }
+    margin: 0 1.5rem;
+    font-size: 1rem; }
   h4 {
-    margin: 0 1rem; } }
+    margin: 0 1.5rem; } }
